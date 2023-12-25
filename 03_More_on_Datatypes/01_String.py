@@ -14,9 +14,6 @@
   hence you caannot change the individual letters of string using assignment operator.
 '''
 #--------------------------------------------------------
-from traceback import print_tb
-
-
 name, age = "Jim", '36'
 name2 = ''' A
             s
