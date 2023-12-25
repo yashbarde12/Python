@@ -239,6 +239,11 @@ print("-----format()-----")
 name, salary, age = 'Jim', '30000', '28'
 print("{}'s salary is {} rupees and he is {} years old.".format(name, salary, age)) 
 # Jim's salary is 30000 rupees and he is 28 years old.
-
+#--------------------------------------------------------
+# ord()
+print("-----ord()-----")
+# to check ascii value
+print(ord('a')) # 97
+print(ord('A')) # 65
 #--------------------------------------------------------
 #--------------------------------------------------------
