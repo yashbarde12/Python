@@ -1,0 +1,29 @@
+Modules:
+- A gruop of functions, variables and classes, saved to a file which is nothing but a module.
+- Every Python file (.py) is act as module.
+
+Types of modules:
+    1. User defined modules : Modules created by user.
+    2. Built in modules     : Already present in python. Eg. math, calender, date, time etc
+    3. External modules     : We have to download and use this modules. Eg. numpy, pandas etc
+
+Multiple ways of importing module:
+    1. import module_name
+    2. from module_name import member
+    3. from module_name import member1, member2
+    4. from module_name import *
+    5. import module_name as alise_module_name 
+    6. from module_name import member as alise_member_name
+    7. from module_name import member1 as alise_member1_name, member2 as alise_member2_name
+
+dir() function:
+    1. dir(): To listout all members of current module.
+    2. dir(module_name): To listout all members of specified module.
+
+Special variable __name__ :
+- In Every python program, Special variable __name__ added internally.
+- This variable stores information regarding program is executed as individual program or as a module.
+- if program executed as individual program,
+  then value of __name__ is __main__
+- if program executed as module from some other program,
+  then value of __name__ is name of module.
