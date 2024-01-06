@@ -3,7 +3,7 @@
 - Tuple is a ordered collection of different values or different types of items.
 - Tuples are immutable means unchangable.
 - Hetrogeneous: like lists, tuples is capable of storing different types of values.
-- Items in list seperated by (,) ans enclosed in ().
+- Items in tuple seperated by (,) ans enclosed in ().
 - Duplicates are allowded in tuples.
 '''
 #--------------------------------------------------------
