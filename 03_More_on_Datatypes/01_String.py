@@ -11,7 +11,7 @@
                      p   y   t   h   o   n
                     -6  -5  -4  -3  -2  -1 
 - Strings are immutable,
-  hence you caannot change the individual letters of string using assignment operator.
+  hence you cannot change the individual letters of string using assignment operator.
 '''
 #--------------------------------------------------------
 name, age = "Jim", '36'
