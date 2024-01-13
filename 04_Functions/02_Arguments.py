@@ -13,7 +13,7 @@ print("----- Positional/Required Arguments -----")
 '''
 - Required arguments are to be passed at the time of function call with the exact match of their positions.
 - If either of the arguments is not provided in the function call, or the position of the arguments is changed, 
-- The Python interpreter will show the error.
+  The Python interpreter will show the error.
 - i.e number of arguments and position of arguments must be match. '''
 def add(c,d):
     return c + d
