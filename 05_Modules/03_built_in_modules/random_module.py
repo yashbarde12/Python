@@ -1,6 +1,6 @@
 # Random Module
 '''
-- This module define several functions to generate random numbers.
+- This module defien several functions to generate random numbers.
 - We can use these functions while developing some games.
 '''
 #--------------------------------------------------------

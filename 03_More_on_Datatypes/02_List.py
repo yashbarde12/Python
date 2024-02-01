@@ -218,7 +218,7 @@ print(a) # [5, 'jim', 10, 'Ash', 'Pam']
 print("-----list.pop(inedex)-----")
 '''
 - Remove and return item at index (default last).
-- This function removes the last value of list of index not given.
+- This function removes the last value if list of index not given.
 - Syntax: list.pop()
 '''
 a = [5, 2, 8, 3, 7]

@@ -5,7 +5,7 @@
 - Used to assign values to the data members of the class when an object of class is created. 
 - constructor is having fixed name i.e __init__(self)
 - self must be first parameter of costructor.
-- consteructor is used to intialize instance varibale.
+- constructor is used to intialize instance varibale.
 - if we are not providing any constructor, then python provides its default constructor.
 '''
 #--------------------------------------------------------

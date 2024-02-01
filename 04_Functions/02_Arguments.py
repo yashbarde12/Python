@@ -13,7 +13,7 @@ print("----- Positional/Required Arguments -----")
 '''
 - Required arguments are to be passed at the time of function call with the exact match of their positions.
 - If either of the arguments is not provided in the function call, or the position of the arguments is changed, 
-  The Python interpreter will show the error.
+- The Python interpreter will show the error.
 - i.e number of arguments and position of arguments must be match. '''
 def add(c,d):
     return c + d
@@ -103,7 +103,7 @@ print(a) # Hello! Jim, Good day :)
 # Variable Length Arguments
 print("----- Variable Length Arguments -----")
 '''
-- Only one paramter to multiple arguments.
+- Only one parameter to multiple arguments.
 - In the function call any number of values can be passed,
   which are treated as tuple in function definition.
 - variable length argument is defined as 

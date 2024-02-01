@@ -3,7 +3,7 @@
 - Tuple is a ordered collection of different values or different types of items.
 - Tuples are immutable means unchangable.
 - Hetrogeneous: like lists, tuples is capable of storing different types of values.
-- Items in tuple seperated by (,) ans enclosed in ().
+- Items in tuples seperated by (,) ans enclosed in ().
 - Duplicates are allowded in tuples.
 '''
 #--------------------------------------------------------
@@ -32,7 +32,7 @@ b = (1, 2, 'Jim', 'Pam', True, 'Angela')
 print("Size of list : ", sys.getsizeof(a)) # 152
 print("Size of tuple : ", sys.getsizeof(b)) # 88
 
-# Difference 4 : Memory space
+# Difference 4 : Time
 # list takes more time to execute as compared to tuple.
 import timeit
 listtime = timeit.timeit(stmt="[1,2,3,4,5,6,7,8,9]", number = 1000000)

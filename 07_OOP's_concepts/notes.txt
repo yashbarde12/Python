@@ -1,0 +1,155 @@
+OOP : way of writting a program which includes class, objects, rv, ... etc
+1.class
+   - class is plan or bluprint for an object
+   - class represents the properties and behaviours required for an object
+   - properties : variables , behaviours : functions(methods)
+   - method : when we write function inside a class, it is called as method
+   - class can have 3 types of variables:
+      1.instance variable
+      2.static variable
+      3.local variable
+   - class can have 3 types of methods:
+      1.instance method
+      2.static method
+      3.class method
+   - ex :car
+   - to create class, we have to use class keyword
+   - class name must start with cap letter
+
+2. object   
+   - object is physical existance of a class
+   - ex. honda civic
+
+3. reference variable:
+   - used to access properties and behaviours of an object
+-----------------------------------------------------------------------------------------------------------------------------------------------
+4. self :
+   - self is always ponting to the current object
+   - self is not a keyword. its just a word, you can use anything instead of self
+   - self must be first parameter of a instance method in oop
+   - self must be first parameter of costructor
+-----------------------------------------------------------------------------------------------------------------------------------------------
+5. constructor :
+   - constructor is an magic method in python
+   - it it called as magic method, because, it get excecutes automatically when object is created
+   - constructor is having fixed name i.e __init__(self)
+   - self must be first parameter of costructor
+   - consteructor is used to intialize instance varibale
+   - if we are not providing any constructor, then python provides its default counstructor
+-----------------------------------------------------------------------------------------------------------------------------------------------
+6. Instance varibale :
+   - varibale whos value changes from object to object called as instance variable
+   - Where to declare,access,update instance variable :
+      - inside a class
+         - in instance method and constructor by using self
+         - instance method's variable get added to the memory only after calling that instance method
+      - outside a class
+         - using reference variable
+
+7. Static varibale :
+   - varibale whos value same for all  objects are called as static variable
+   - only one copy of static variable is created
+   - Where to declare static variable :
+      - inside a class
+         - inside a class but outside of all method (all 4)
+         - inside class method using cls keyword or class name
+         - all other methods (instance,constructor,static)  using class name
+         - static variables who declared inside a method will be added only after calling thar method
+      - outside a class
+         - using class name
+      - generally to deal with static variables, use class name only (or cls variable inside class method only)
+
+8. local variable
+   - the variable declared inside a any method without using self,cls, or class name are called as local variable
+   - for temp use
+-----------------------------------------------------------------------------------------------------------------------------------------------
+9. instance method:
+   - to work with instance variable
+   - first parameter must be self
+   - can called with:
+      - inside class using self
+      - outside class using rv
+10. class method  
+   - to work with static variable
+   - declare with @classmethod decorator
+   - first parameter must be cls
+   - can call with :
+      - in class - using class name or cls variable 
+      - outside a class using class name or rv
+11. static method :
+   - this is genral utility method
+   - declare with @staticmethod decorator
+   - can call with :
+      - in class - using class name 
+      - outside a class using class name or rv
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Problem : to access members of one class into another
+solution : those classes must be in relationship
+         1. IS-A relationship
+         2. HAS-A relationship
+
+HAS-A relationship:
+   - use when we want access only required members of one class to another
+   - achived by creating object of one class in another
+
+IS-A relationship : 
+   -use when we want to access all members of one class in another class
+   -achived by creating parent-child relationship
+   -this relationship is also called as INHERITANCE
+
+Types of INHERITANCE :
+1. single
+   - one parent and one child
+2. multilevel
+   -The multi-level inheritance includes the involvement of at least two or more than two classes. 
+   -out of which one class is inheriting members from another class and this inherited class may be parent for another class
+3. multiple
+   - one child with multiple parent class
+4. hierarchical
+5. hybrid
+--------------------------------------------------------------------------------------------
+polymorphism :
+   - one entity with muitple forms
+   - has 2 types  
+      1. static/compile time polymorphism
+         -checked at compile
+         -method overloading
+            -multiple methods with same name in one class
+            -not supported in python , because python is dynamically typed programing lang
+            -if we are writting method with same name but with diff parameters, still overloading is not suported
+      2. dynamic/run time polymorphism
+         -checked at run time
+         -method overridding
+            -when parent and child has methods with same name with same number of arguments
+            -supported in python
+            -why we need method overriding
+               1. when child is not happy with parents implementation (re-imlemetation)
+               2. when parent has some partial implementation
+            - super() is used when child wants to access members of parent having same name
+------------------------------------------------------------------------------------------------------
+Encapsulation:
+   - data hiding 
+   - by making members (properties and behaviours) private or protected
+   - private : use double underscore
+      - can be accessed only inside same class
+   - protected : use single underscore
+      - can be accessed in same class as well as derived class (child class)
+-------------------------------------------------------------------------------------------
+Abstraction:
+   - means partial implementation
+   - method or class can be abstract
+   - abstract method
+      - method with no imlemetation 
+      - this method must be in abstract class
+      - we cant create abstract method in non abstract class
+      - abstract method must have @abstractmethod decorator
+         -@abstractmethod decorator is present inside abc module
+   - abstract class
+      - if there is abstract method in a class, then only the class must be abstract class
+      - abstract class must be child of ABC class (ABC - Abstract Base Class)
+      - abstract class must contain at least on eabstract method and must be child of ABC
+         - ABC class present inside abc module
+      - we cant create object of abstract class (why?)
+      - abstract class can have non abstract method (concrete methods - methods with body)
+      - child class has to implememnt abstract class's abatrsct methods
+         - if child class is not providing implementation for its parents abstract methods then that child class is also treated as abstract class

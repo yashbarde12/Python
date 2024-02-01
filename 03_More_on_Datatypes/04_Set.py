@@ -6,7 +6,7 @@
 - Mutable (for the elements): but the set itself (as a whole) is immutable.
 - Items in list seperated by (,) ans enclosed in {}.
 - We can apply mathematical operations like union, intersection, difference etc on objects.
-- Insertion order is not preserved, but we can sort elements
+- Insertion order is not preserved, nut we can sort elements
 - Indexing and sclicing are not allowded in sets.
 '''
 #--------------------------------------------------------

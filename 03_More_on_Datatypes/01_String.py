@@ -11,7 +11,7 @@
                      p   y   t   h   o   n
                     -6  -5  -4  -3  -2  -1 
 - Strings are immutable,
-  hence you cannot change the individual letters of string using assignment operator.
+  hence you caannot change the individual letters of string using assignment operator.
 '''
 #--------------------------------------------------------
 name, age = "Jim", '36'
@@ -124,6 +124,7 @@ print("-----find()-----")
 a = "JIM IS GOING TO MARKET"
 b = "TO"
 print(a.find(b, 0 , len(a)-1)) # 13
+print(a.find("Z", 0 , len(a)-1)) # -1
 #--------------------------------------------------------
 # isalnum()
 print("-----isalnum()-----")
